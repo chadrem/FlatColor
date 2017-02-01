@@ -4,6 +4,7 @@
 " Maintainer: github.com/MaxSt
 " License:    The MIT License (MIT)
 " Based On: pencil by github.com/reedes and github.com/mattly
+" Fork: Forked by Chad Remesch (@chadrem on Github) for easier readability.
 
 hi clear
 
@@ -102,7 +103,7 @@ endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:bg_dark, "fg": s:norm })
-call s:h("Comment",       {"fg": s:medium_gray, "gui": "italic", "cterm": "italic"})
+call s:h("Comment",       {"fg": s:light_gray, "gui": "italic", "cterm": "italic"})
 
 call s:h("Constant",      {"fg": s:yellow})
 hi! link String           Constant
@@ -163,7 +164,7 @@ call s:h("IncSearch",     {"bg": s:red, "fg": s:clouds})
 call s:h("Search",        {"bg": s:bg_dark})
 call s:h("MoreMsg",       {"fg": s:medium_gray, "gui": "bold", "cterm": "bold"})
 hi! link ModeMsg MoreMsg
-call s:h("LineNr",        {"fg": s:dark_asphalt, "bg": s:bg_subtle})
+call s:h("LineNr",        {"fg": s:light_gray, "bg": s:bg_subtle})
 call s:h("CursorLineNr",  {"bg": s:blue, "fg": s:bg_subtle})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg_dark})
@@ -205,7 +206,7 @@ call s:h("CursorLine",    {"bg": s:bg_subtle})
 call s:h("ColorColumn",   {"bg": s:bg_subtle})
 
 " remainder of syntax highlighting
-call s:h("MatchParen",    {"bg": s:bg_subtle, "fg": s:norm})
+call s:h("MatchParen",    {"bg": s:yellow, "fg": s:norm})
 call s:h("qfLineNr",      {"fg": s:medium_gray})
 
 " hi helpHyperTextJump guifg=#5FAFD7 ctermfg=74
