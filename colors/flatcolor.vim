@@ -206,7 +206,7 @@ call s:h("CursorLine",    {"bg": s:bg_subtle})
 call s:h("ColorColumn",   {"bg": s:bg_subtle})
 
 " remainder of syntax highlighting
-call s:h("MatchParen",    {"bg": s:yellow, "fg": s:norm})
+call s:h("MatchParen",    {"bg": s:medium_gray, "fg": s:norm})
 call s:h("qfLineNr",      {"fg": s:medium_gray})
 
 " hi helpHyperTextJump guifg=#5FAFD7 ctermfg=74
